@@ -3,10 +3,12 @@
   --DarkCyan: hsl(185, 75%, 39%);
   --VeryDarkBlue: hsl(229, 23%, 23%);
   --DarkGrayishBlue: hsl(227, 10%, 46%);
+
   /*Neutrales*/
   --DarkGray: hsl(0, 0%, 59%);
 
   /*Fonts*/
+  --Font: 'Kumbh Sans', sans-serif;
 }
 
 html {
@@ -17,4 +19,85 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--DarkCyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10%;
+}
+
+.card__top {
+  line-height: 0;
+}
+
+.card__bottom {
+  background-color: white;
+}
+
+.card__user {
+  position: relative;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__user-img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: var(--Font);
+  padding: 32px 0px;
+  border-top: 1px solid rgba(150, 150, 150, 0.45);
+}
+
+/*Textos*/
+.card__user-name {
+  font-family: var(--Font);
+  font-size: 18px;
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+  margin: 24px 0px 6px 0px;
+}
+
+.card__user-name span {
+  color: var(--DarkGray);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.card__user-city {
+  font-size: 16px;
+  color: var(--DarkGray);
+  font-weight: 400;
+  font-family: var(--Font);
+  margin: 0px;
+}
+
+.card__user-num {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.card__user-stat-type {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--DarkGray);
+  margin: 8px 0px 0px 0px;
+  text-align: center;
 }
