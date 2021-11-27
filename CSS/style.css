@@ -29,16 +29,20 @@ body {
   justify-content: center;
 }
 
-.card {
-  border-radius: 10%;
-}
-
 .card__top {
   line-height: 0;
+  border-radius: 20%;
+}
+
+.card__top img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card__bottom {
   background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .card__user {
@@ -92,6 +96,7 @@ body {
   font-size: 18px;
   margin: 0;
   text-align: center;
+  color: var(--VeryDarkBlue);
 }
 
 .card__user-stat-type {
